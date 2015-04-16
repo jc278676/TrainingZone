@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en"><!-- #BeginTemplate "/Templates/mainAll.dwt" --><!-- DW6 -->
+<head>
+<meta charset="utf-8">
+<!-- #BeginEditable "doctitle" -->
+<title>CP1406 - GitHub</title>
+<script type="text/javascript">
+function openPage()
+{
+	var login = document.getElementById("loginField").value;
+    var campus = "tsv";
+	if (document.getElementById("campusCns").checked)
+        campus = "cns"
+    var url = "http://ditweb" + campus + ".jcu.edu.au/~" + login + "/a1";
+//    alert(url);
+    window.open(url + "/plan.html", "plan");
+    window.open(url, "site");
+}
+</script>
+<!-- #EndEditable -->
+<style media="screen" type="text/css">
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin: 0;
+}
+h1, h2, h3, h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+h4 {
+	font-style: italic;
+}
+li {
+	margin-bottom: 0.75em;
+}
+.smaller {
+	font-family: "Times New Roman", Times, serif;
+	font-size: small
+}
+code, .codeandnames {
+	font-family: "Courier New", Courier, mono;
+	text-decoration: none;
+	font-weight: bold
+}
+
+code.section {
+	display:block
+	margin-top: 1em;
+}
+.highlightcolour {
+	color: #FF3300;
+	background-color: #FFFFFF
+}
+.breakhere {
+	page-break-before: always
+}
+.rightpanel {
+	clear: both;
+	float: right;
+	background-color: #f0f3ff;
+	margin-right: .2em;
+	width: 25%;
+	margin-left: 1em;
+	margin-bottom: 30px;
+	border: 1px solid #97bfff;
+}
+.rightpanel h4 {
+	background-color: #FFFFCC;
+	font-size: 0.8em;
+	margin: 0px;
+	font-style: normal;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+.rightpanel p {
+	font-size: 0.9em;
+	margin: 0px;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
+}
+.notebox {
+	clear: both;
+	background-color: #FFFFCC;
+	border: #97bfff 1px solid;
+	margin-right: 1.2em;
+	margin-left: 1.2em;
+}
+.notebox h4 {
+	font-size: 1.1em;
+	margin: 0px;
+	font-style: normal;
+	padding-left: 1em;
+	padding-right: 0.3em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	background-color: #97bfff;
+}
+.notebox p {
+	margin: 0px;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.2em;
+}
+#footer {
+	position: relative;
+	clear: both;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 5px 3px;
+	background-color: #2c2e38;
+	color: #d7ceb2;
+	text-shadow: 1px 1px 0px #5c5f72;
+	font: 'BazarMedium', Arial, sans-serif;
+	border-radius: 15px 15px 0px 0px;
+	box-shadow: 5px -5px 5px #666;
+}
+#container {
+	margin: 1em;
+}
+#header {
+	padding: 5px 15px;
+	background-color: #2c2e38;
+	color: #d7ceb2;
+	text-shadow: 1px 1px 0px #2c2e38, 2px 2px 0px #5c5f72;
+	font: 1.5em 'BazarMedium', Arial, sans-serif;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 5px 5px 5px #666;
+}
+#footer a {
+	color:#FC3;
+}
+</style>
+</head>
+<body>
+<div id="header">CP1406/CP2010 - Web Design &amp; Development - JCU</div>
+<div id="container"> <!-- #BeginEditable "main table" -->
+  <h1>Practical - GitHub &amp; PHP</h1>
+  <div class="notebox">
+    <h4>Note</h4>
+    <p>The PHP component is not expected for CP1406 students, but you're welcome to do it if you like.</p>
+  </div>
+  <h2>Aim:</h2>
+  <ul>
+    <li>To get set up for using GitHub for version control and collaborating</li>
+    <li>(CP2010) to build competence in PHP basics and database access</li>
+  </ul>
+  <h2>GitHub:</h2>
+  <p>Git (version control) and GitHub (Web interface/storage for git projects) are superb tools that you should be using. In particular, they will be invaluable for your group work assignment. <br>
+  As you learn and practise this, imagine how you will be doing these things for your group project.</p>
+  <p>First, please check if the GitHub (not Git) client has been installed on your computer. If it hasn't, please start installing it from <a href="https://windows.github.com" target="_blank">https://windows.github.com</a> or <a href="https://mac.github.com" target="_blank">https://mac.github.com</a></p>
+  <p>While you're waiting, get started on the rest:</p>
+  <ul>
+    <li>If you don’t have one yet, please create a free account at <a href="https://github.com/" target="_blank">https://github.com/</a></li>
+    <li>      Then please upgrade your account to a free student account at: <a href="https://education.github.com/discount_requests/new" target="_blank">https://education.github.com/discount_requests/new</a> - this allows you to have private repositories for free.</li>
+    <li>Then, read the article on <a href="http://needmoredesigns.com/blog/github-assisted-web-development/" target="_blank">GitHub-assisted Web Development</a>
+      <ul>
+        <li>It might take a bit to get a hang of GitHub and how best to use it, so take some time to read help and other articles...</li>
+        <li>You won't have time for it all now, but later...<br>
+          Login to <a href="https://cas.secure.jcu.edu.au/cas/login?service=https://www.lynda.com/portal/jcu" target="_blank">lynda.com via JCU's access portal</a>, then watch the video course: <a href="http://www.lynda.com/GitHub-tutorials/GitHub-Web-Designers/162276-2.html" target="new">GitHub for Web Designers</a></li>
+      </ul>
+    </li>
+    <li>Now create a repository (repo) for your Training Zone site online:<br>
+    <img src="GitHub_comNewRepoButton.png" width="327" height="121" alt=""/><br>
+    ...
+    <br>
+    <img src="GitHub_comNewRepo.png" width="773" height="471" alt=""/></li>
+    <li>Run the GitHub client program and enter your username and password in the Options</li>
+    <li>Then you can clone this new repo to your desktop  through the client interface <br>
+      (or clicking on the &quot;Clone In Desktop&quot; on the website might work depending on how the client installed).<br>
+    <img src="GitHubWin01.png" width="281" height="317" alt=""/></li>
+    <li>Now we can view this repo as a folder on the computer (the GitHub client shows changes and stuff, not just files). Right-click on the repo name and choose to open in Explorer or Finder:<br>
+    <img src="GitHubWin02.png" width="558" height="154" alt=""/></li>
+    <li>Now you can copy your Training Zone website files into this folder and they will show up as changes in the client. <br>
+      Add a brief summary and a &quot;commit message&quot; to describe the changes (you do this for every time you want to commit), and click &quot;Commit to master&quot;. This commits/saves it locally.<br>
+    <img src="GitHubWin03.png" width="558" height="215" alt=""/></li>
+    <li>Then click the Sync button to upload (push) the files to GitHub.<br>
+    <img src="GitHubWin04.png" width="113" height="51" alt=""/></li>
+    <li>View the repo via the GitHub.com website now to see the changes.<br>
+    </li>
+    <li>Next we want to practise collaborating with others, as you will for your group project.
+      <ul>
+        <li>Pair up with another person in your prac and do this both ways (edit each other's files)...</li>
+        <li>Read how to <a href="https://help.github.com/articles/adding-collaborators-to-a-personal-repository/" target="_blank">add collaborators at GitHub's article here.</a></li>
+        <li>Then do it... each of you add the other as a collaborator for your Training Zone site.</li>
+        <li>Clone your partner's site, <br>
+          make a noticeable modification, <br>
+          then commit and push it back to the repo. <br>
+        Make sure to use a meaningful commit message.</li>
+      </ul>
+    </li>
+    <li>Explore the online user interface to see how to view and edit code online, create issues (for discussion) and get familiar with all of this (it might take a while... so keep reading and practising).</li>
+  </ul>
+  <p>&nbsp;</p>
+  <h2>PHP (CP2010 + keen CP1406 students):</h2>
+  <p>Please download and unzip the sample files provided (more on these later).</p>
+  <p>Remember that PHP is server-side, so it doesn't run in the browser (like HTML/CSS), but on the server. You need to upload and view on the server, or a localhost server (like <a href="http://www.usbwebserver.net/en/" target="_blank">USBWebServer</a>).</p>
+  <h3>Basics:</h3>
+  <ol>
+    <li>Create a new directory on your server under public_html for this prac. You could call it php or something.</li>
+    <li>Create a 'blank' (&quot;None&quot; for layout) PHP file (choose HTML5 docType) in Dreamweaver (or your choice of program). You may notice that the ONLY difference between this PHP file and a blank HTML file is that when you save it, the default file name ends in .php.<br>
+      Remember that every file you write that you want to use PHP code in must have a .php extension.<br>
+      Add a simple PHP <span class="codeandnames">&lt;?php echo &quot;Hello World&quot;; ?&gt;</span> statement in the body somewhere. Upload it to your server and test it. <br>
+    Change it (add another statement), re-upload and refresh the page - to make sure your workflow is working and flowing...</li>
+    <li>Create a &quot;template&quot; page where you <span class="codeandnames">include</span> a header file and a footer file. <br>
+    Make the header and footer files contain valid content, like a site title in the header and a copyright notice in the footer.</li>
+  </ol>
+  <h3>Databases:</h3>
+  <ol>
+    <li>Download the phonerecords.zip file from here on LearnJCU. <br>
+    Unzip it and upload the contents to a directory called phonerecords on your server (you don't need the MACOSX files or the _notes files, just the php and the sqlite files). </li>
+    <li>Point your Web browser to the new files - something like http://ditwebtsv.jcu.edu.au/~jc123456/phonerecords<br>
+    &quot;Play&quot; with the simple phone records example and see what it can do. Start with the phone.php file.</li>
+    <li> To begin with, it will not insert or modify data - this is a <strong>permissions </strong>issue. <br>
+      You need to make the <strong>database file </strong>and <strong>the directory it's in</strong> writeable by other (everyone).<br>
+      You can do this by changing to 
+      &quot;<strong>Remote server</strong>&quot; view in the Files panel in Dreamweaver, right-clicking on these two (file and directory) and choose <strong>Set Permissions...</strong>They should be: </li>
+    <ul>
+      <li>database file: <img src="permissionsDB.png" width="444" height="208" alt="Permissions for database" style="vertical-align:middle"></li>
+      <li>directory database is in: <img src="permissionsDirectory.png" width="446" height="211" alt="Permissions for folder" style="vertical-align:middle"></li>
+    </ul>
+    <li>Spend some time reading the source code in Dreamweaver so you can see how this demo works.<br>
+      The example is not meant to demonstrate beautiful design, but it is a fairly complete demo of just about all the things you need to do with your database programming, including:
+      <ol>
+        <li>Insert a new record</li>
+        <li>Update an existing record (make changes to the text in the fields) then click Update Entry</li>
+        <li>Delete existing records. In this demo you can do this either by
+          <ol>
+            <li> clicking the Delete Entry button (takes you to the output page), or</li>
+            <li>clicking the X button (&quot;silently&quot; deletes the record and redirects you back to the main page using the PHP header function)</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li>Download Adminer from <a href="http://www.adminer.org" target="_blank">http://www.adminer.org</a><br>
+      Rename the file to just <strong>adminer.php</strong> then upload it to your public_html folder </li>
+    <li>Load this in your browser and enter the path to your phonerecords db file.<br>
+      Then 'play' with this to see how it works. <br>
+      Make changes to the database using Adminer then check the changes on the phonerecords site.
+    </li>
+    <li>Good, now you need to do some of your own additions to this program. <br>
+      Let's start by simply adding heading text to the list under &quot;Current Data&quot;. We see the values, but no headings for these, so add &quot;Name&quot; and &quot;Phone&quot; above the listings. Don't worry about the lining up of this at this stage. You can come back and use CSS to display this properly some time if you like.</li>
+    <li>Now display the record ID as normal text (not in a form field) at the start of each line of output. See if you can figure out where this should go. </li>
+    <li>Let's add another field to the database.<br>
+      The current example only has name and phone fields. Add a new (text) field for <strong>address</strong> to the database using SQLite Manager.<br>
+    </li>
+    <li>Modify the PHP code so that it can handle the new address field. <br>
+      Just look at how the existing code works and update it based on what you see there.</li>
+    <li>Good... Now start from scratch and make your own complete but simple database-driven Web site.<br>
+      Please do this iteratively. First get a small part working - like displaying database content - then add functionality one step at a time, testing along the way.<br>
+      Let's make a simple site to display and work with products for sale. You can customise this and add more if you like. <br>
+      Start by making a new database file in SQLite Manager.
+      Include the following fields:
+  <ol>
+    <li>id (auto increment integer)</li>
+    <li>name</li>
+    <li>description</li>
+    <li>price</li>
+  </ol>
+    </li>
+    <li>Create PHP code to:
+      <ol>
+        <li> display the contents of the database</li>
+        <li>delete records</li>
+        <li>update records</li>
+        <li>(advanced - not in sample code) ... create tick boxes or quantity fields in HTML next to each product so you can choose items to buy, then a BUY button that will show the total price when clicked.</li>
+      </ol>
+    </li>
+  </ol>
+  <p>&nbsp;</p>
+<!-- #EndEditable --></div>
+<div id="footer">
+  <p>&copy; Lindsay Ward, <a href="http://www.jcu.edu.au/" target="_blank">James Cook University</a> | <a href="#header" target="_self">To Top</a></p>
+</div>
+</body>
+<!-- #EndTemplate --></html>
